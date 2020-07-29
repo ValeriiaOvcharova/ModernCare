@@ -1,0 +1,272 @@
+//$layout-breakpoint-small: 960px
+$break-lg: 1201px
+$break-md: 1001px
+$break-950: 951px
+$break-850: 851px
+$break-800: 801px
+$break-650: 651px
+$break-500: 563px
+
+@media (max-width: $break-lg)
+  .wrapper
+    h2, .h2
+      font-size: 28px
+      margin-bottom: 15px
+    h3, .h3
+      font-size: 12px
+      line-height: 14px
+    .header 
+      height: 86px
+    .logo
+      max-width: 140px
+    .slogan
+      font-size: 18px
+      line-height: 21px
+    .text
+      font-size: 36px
+      line-height: 42px
+      letter-spacing: -0.03em
+      text-transform: uppercase
+    .cost-item
+      font-weight: 300
+      font-size: 36px
+      line-height: 42px
+      &:nth-of-type(2)
+        font-weight: bold
+        font-size: 48px
+        line-height: 56px
+      &:nth-of-type(3)
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+
+    .banner-wrapper
+      .banner-item
+        max-width: 45%
+        &.item-right
+          max-width: 50%
+
+    .banner-content
+      .owl-item
+        .item-content
+          max-width: 360px
+      .owl-nav
+        max-width: 440px
+
+    .care-list_item
+      max-width: 50%
+      width: 50%
+
+    .img-wrapper
+      margin: 0 auto
+
+    .modern-care_description
+      top: -112px
+      left: 40%
+    .item-about_left,
+    .item-about_right
+      max-width: 45%
+
+    .about-us_wrapper
+      padding: 24px 10px 24px
+
+    .paragraph-box
+      width: 116%
+      padding: 18px 0 18px 34px
+      .h2
+        margin-bottom: 12px
+
+@media (max-width: $break-md)
+  .wrapper
+    h2, .h2
+    font-size: 28px
+
+    .banner-wrapper
+      .banner-item
+        max-width: 35%
+        &.item-right
+          max-width: 63%
+    .form-wrapper
+      top: 0
+      &.main-container
+        max-width: 100%
+        width: 100%
+        border-radius: 0
+
+    .contact-form
+      background: $bg-dark
+
+    .modern-care
+      margin-bottom: 15px
+
+    .modern-care_description
+      top: -112px
+      left: 38%
+    .services
+      .item
+        width: 45%
+
+@media (max-width: $break-800)
+  .wrapper
+    .text
+      font-size: 25px
+    .modern-care_description
+      left: 35%
+    .clients-list
+      margin-bottom: 10px
+    .clients-list_item
+      width: 47%
+      margin: 0 auto 15px
+      &::before
+        padding-top: 75%
+      &:hover
+        transform: scale(1.1)
+
+    .clients-description
+      margin-bottom: 10px
+
+    .banner-content
+      .owl-item
+        .item-content
+          max-width: 300px
+    .owl-prev,
+    .owl-next
+      width: 25px
+      height: 25px
+      &::before
+        width: 16px
+        height: 11px
+    .footer
+      .footer-item
+        max-width: 45%
+        &:first-of-type
+          .footer-link
+            padding-left: 10px
+        &:last-of-type
+          .footer-link
+            padding-right: 10px
+
+@media (max-width: $break-850)
+  .wrapper
+    .modern-care_description
+      left: 35%
+
+    .banner-content
+      .owl-nav
+        max-width: 390px
+
+
+@media (max-width: $break-650)
+  .wrapper
+    .banner-wrapper
+      margin-bottom: 40px
+      .banner-item
+        max-width: 100%
+        &.item-left
+          padding: 20px 0 20px
+          text-align: center
+          order: 0
+        &.item-right
+          margin: 0 auto
+          order: -1
+
+      .flex-container
+        .flex-container
+          flex-wrap: wrap
+          height: auto
+          position: static
+          margin: 0 auto
+          &.bg-wrapper
+            display: none
+    .banner-content
+      .owl-nav
+        display: none
+      .owl-item
+        margin-left: 0
+
+      .owl-carousel
+        .owl-stage-outer.owl-height
+          height: auto
+    .modern-care_description
+      display: block
+      width: 100%
+      margin: 0 auto
+      left: 0
+      transform: translateX(0%)
+      top: 10px
+    .modern-care
+      .h4
+        color: $main-font-color
+        font-size: 16px
+        line-height: 19px
+
+    .care-list_item
+      padding: 0
+      max-width: 100%
+      width: 100%
+      margin-bottom: 20px
+    .services
+      .item
+        width: 80%
+    .footer
+      .flex-container
+        top: 50%
+        transform: translateY(-50%)
+
+@media (max-width: $break-500)
+  .wrapper
+    h4, .h4
+      font-size: 12px
+    h5, .h5
+      font-size: 12px
+
+    .document-link
+      font-size: 12px
+
+    .icon-address,
+    .icon-mail,
+    .icon-phone
+      padding-left: 25px
+      &::before
+        width: 15px
+        height: 15px
+    .clients-list_item
+      width: 100%
+    .footer
+      height: auto
+      .footer-item
+        width: 100%
+        max-width: 100%
+        padding: 40px 10px
+      .flex-container
+        height: auto
+        margin-bottom: 40px
+        .footer-link
+          margin: 0 auto
+      .bg-logo
+        top: 0
+        max-width: 100%
+
+    .item-about_left,
+    .item-about_right
+      max-width: 100%
+      padding: 10px
+    .item-about_left
+      order: 1
+      justify-content: center
+      display: flex
+      img
+        width: 60%
+
+    .about-us_wrapper
+      border: none
+      text-align: center
+
+    .paragraph-box
+      padding: 10px
+      position: static
+      width: 100%
+      text-align: center
+      .h2
+        padding: 5px
+        text-align: center
